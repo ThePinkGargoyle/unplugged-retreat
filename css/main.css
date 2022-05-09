@@ -87,10 +87,40 @@ textarea {
   Author's custom styles
   ========================================================================== */
 
-/* General Styles */
+/* Global Styles*/
+
+  aside {
+  margin-left: 30px;
+}
+  
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+  /* General Styles */
  
 html {
 	font-size: 16px;
+  
 }
  
 body {
@@ -217,10 +247,14 @@ a {
 
 /* Hero Area */
 
-.hero-area {
+.hero-area .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url("../img/jake-melara-30679-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-area p {
@@ -235,31 +269,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin-top: 30px;
 }
-
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-
-
 
 .form p {
   font-size: 1.5rem;
@@ -270,6 +280,13 @@ input[type=button] {
 .features-item-description {
   width: 84%;
   min-height: auto;
+}
+
+.features .content-wrapper {
+  background: url("../img/rawpixel-800820-unsplash1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features h2 {
@@ -294,6 +311,13 @@ input[type=button] {
 
   .reviews p {
     line-height: 1.5rem;
+  }
+
+  .reviews {
+    background: url("../img/omar-lopez-296944-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
 /* ==========================================================================
@@ -376,7 +400,10 @@ input[type=button] {
   .hero-area .content-wrapper {
     margin-top: 2.3571rem;
     margin-bottom: 23.33rem;
+   
   }
+
+  
 /* Aside */
   aside .content-wrapper {
     justify-content: flex-start;
