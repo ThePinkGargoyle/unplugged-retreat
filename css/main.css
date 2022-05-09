@@ -87,12 +87,191 @@ textarea {
   Author's custom styles
   ========================================================================== */
 
-/* Global Styles*/
-
-  aside {
-  margin-left: 30px;
+/* General Styles */
+ 
+html {
+	font-size: 16px;
 }
-  
+ 
+body {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  color: #e2e3ed;
+  text-align: left;
+}
+ 
+ul, 
+ol {
+  list-style-type: none;
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+ 
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.875em;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin: 20px 0;
+}
+ 
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+address {
+ font-style: normal;
+}
+ 
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* -------------------- Base Header - Footer Styles -----------------*/
+header,
+footer  {
+  background-color: #202322;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header {
+  padding: 15px 0;
+}
+
+header .content-wrapper {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.header-divider {
+  background: #3a3a3a; 
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
+footer {
+  text-align: center;
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+/* -------------------- Mobile Styles -----------------*/
+
+/* Hero Area */
+
+.hero-area {
+  background: url(../img/jake-melara-30679-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif; 
+  font-weight: 500; 
+  line-height: 1.2; 
+}
+
+/* Aside */
+
+aside {
+  background-color: #527158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+aside .form{
+  margin-top: 30px;
+}
 
 input[type=text] {
   box-sizing: border-box;
@@ -116,214 +295,110 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-  /* General Styles */
- 
-html {
-	font-size: 16px;
-  
-}
- 
-body {
-  font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
-  text-align: left;
-}
- 
-ul, 
-ol {
-  list-style-type: none;
-}
- 
-a {
-  color: #e2e3ed;
-  text-decoration: none;
-}
- 
-h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
-}
- 
-h3, 
-h4 {
-  font-family: 'Poppins', sans-serif;
-  margin: 20px 0;
-  font-size: 1.125em;
-}
- 
-p {
-  font-size: .875em;
-  line-height: 1.285;
-}
-  
-address {
- font-style: normal;
-}
- 
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
-}
-
-/* -------------------- Mobile Styles -----------------*/
-
-  /* ==========================================================================
-    Homepage Page
-  ========================================================================== */
-  body {
-  width: fit-content;
-  padding-top: 2.142rem;
-  /*color: #e2e3ed*/
-}  
-
-.content-wrapper {
-  max-width: 86%;
-  height: auto;
-  margin: auto;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-content: left;
-}
-
-  /* -------------------- Base Header - Footer Styles -----------------*/
-header,
-footer  {
-  text-align: left;
-  margin: 0 auto;
-  margin-bottom: 2.357rem;
-}
-
-header img {
-  max-width: 100%;
-}
-
-.header-divider {
-  width: 100%;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: space-between; 
-}
-
-header nav ul li {
-  list-style: none;
-}
-
-/* -------------------- <h1 to h4> <p> <a> Font  Styles -----------------*/
-h1, h2, h3, h4 {
-  text-align: left;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-}  
-
-h1 {
-  margin-left: -18%;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3, h4 {
-  font-size: 1.8rem;
-}
-
-p {
-  font-weight: 400;
-  line-height: 3rem;
-  font-family: 'Open Sans', sans-serif;
-}
-
-a {
-  font-size: 1.5rem;
-  font-weight: 700;
-  font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
-}
-
-/* --------------------Body Styles-----------------*/
-
-/* Hero Area */
-
-.hero-area .content-wrapper {
+.features {
+  background: url('../img/rawpixel-800820-unsplash1.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url("../img/jake-melara-30679-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.hero-area p {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.features h2 {
+  margin-bottom: 60px;
 }
-  
-/* Aside */
 
-aside {
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.form p {
-  font-size: 1.5rem;
-  font-weight: 500;
-}  
-
-/* Features */
-.features-item-description {
-  width: 84%;
-  min-height: auto;
-}
-
-.features .content-wrapper {
-  background: url("../img/rawpixel-800820-unsplash1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.features h2 {
-  width: 100%;
-  margin-left: 7.7%;
-  border: #b3d4fc solid;
-}
-
 .features p {
   text-align: center;
-  margin-left: 14%;
+  margin: 0;
+}
+
+/* Reviews */
+
+.reviews {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
 }
 
 
 /* ==========================================================================
     About Page
     ========================================================================== */
-  .reviews h1 {
-    width: 100%;
-    margin-left: 7.7%;
-  }
+.mission {
+  background-color: #527158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-  .reviews p {
-    line-height: 1.5rem;
-  }
+.contact-section {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-  .reviews {
-    background: url("../img/omar-lopez-296944-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.contact-content p {
+  margin: 0;
+}
 
 /* ==========================================================================
     FAQ Page
     ========================================================================== */
- 
+.faq {
+  background-color: #527158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
+}
 
 /* ---------------------------- Tablet Styles - Homepage  ----------------------------*/
   @media only screen and (min-width: 768px) {
